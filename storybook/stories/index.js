@@ -47,7 +47,7 @@ const PageContent = () => {
   );
 };
 
-const AppbarContent = isOpen => {
+const AppbarContent = ({isOpen}) => {
   return (
     <View style={{width: '100%'}}>
       <Text>Appbar content</Text>
@@ -55,7 +55,7 @@ const AppbarContent = isOpen => {
   );
 };
 
-const Appbar = children => {
+const Appbar = ({children}) => {
   return (
     <View style={{width: '100%', height: 56, backgroundColor: 'green'}}>
       {children}
@@ -65,7 +65,7 @@ const Appbar = children => {
 
 const pageWidth = Platform.OS === 'web' ? 600 : Dimensions.get('window').width;
 
-export default storiesOf('Drawer', module)
+storiesOf('Drawer', module)
   .addParameters({jest: ['Drawer']})
   .add('Simple', () => (
     <Container scroll style={{padding: 0, flex: 1}}>
@@ -285,7 +285,9 @@ export default storiesOf('Drawer', module)
                 style={{
                   width: '100%',
                 }}>
-                <Appbar />
+                <Appbar>
+                  <AppbarContent />
+                </Appbar>
                 <View style={styles.body}>
                   <PageContent />
                 </View>
@@ -310,7 +312,11 @@ export default storiesOf('Drawer', module)
               drawerContent={<DrawerContent />}
               onClose={() => store.set({isOpen: false})}
               type={'permanent'}
-              appbar={<Appbar />}>
+              appbar={
+                <Appbar>
+                  <AppbarContent />
+                </Appbar>
+              }>
               <View
                 style={{
                   width: '100%',
