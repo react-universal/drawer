@@ -69,5 +69,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@sambego/storybook-state": "^2.0.1"
   }
 }
