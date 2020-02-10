@@ -1,5 +1,5 @@
 {
-  "name": "@reactuniversal/ripple",
+  "name": "@reactuniversal/drawer",
   "version": "0.0.1",
   "scripts": {
     "android": "react-native run-android",
@@ -42,7 +42,8 @@
     "react-dom": "^16.12.0",
     "react-native": "0.61.5",
     "react-native-web": "^0.12.1",
-    "react-test-renderer": "16.9.0"
+    "react-test-renderer": "16.9.0",
+    "@sambego/storybook-state": "^2.0.1"
   },
   "jest": {
     "preset": "react-native"
@@ -52,25 +53,23 @@
     "react",
     "react universal",
     "react native",
-    "ripple",
-    "material-ripple"
+    "drawer",
+    "react drawer",
+    "side menu"
   ],
-  "description": "React Universal Ripple that works with Web, iOS, Android, Electron",
-  "homepage": "https://react-universal.github.io/ripple/",
+  "description": "React Universal Drawer that works with Web, iOS, Android, Electron",
+  "homepage": "https://react-universal.github.io/drawer/",
   "sideEffects": false,
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-universal/ripple"
+    "url": "https://github.com/react-universal/drawer"
   },
   "author": "Cody Pearce",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/react-universal/ripple/issues"
+    "url": "https://github.com/react-universal/drawer/issues"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "dependencies": {
-    "@sambego/storybook-state": "^2.0.1"
   }
 }
