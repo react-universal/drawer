@@ -4,7 +4,7 @@
 
 A React Material Drawer component that works on the Web, Android, iOS, Electron, and anywhere else React Native is supported. This component is a part of the React Universal ecosystem of universal React and React Native components. Checkout the [React Universal docs](https://github.com/react-universal/react-universal) to learn more.
 
-### [Storybook Demos](https://react-universal.github.io/ripple/?path=/story/*)
+### [Storybook Demos](https://react-universal.github.io/drawer)
 
 ### Installation
 
